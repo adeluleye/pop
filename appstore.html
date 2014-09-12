@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wizcode Technologies Ltd</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="myboot/style.css">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+
+</head>
+
+
+<body>
+
+<!--Fixed to top
+The Bootstrap navbar can be dynamic in its positioning. By default, it is a block-level element that takes its positioning based on its placement in the HTML. With a few helper classes, you can place it either on the top or bottom of the page, or you can make it scroll statically with the page.
+
+If you want the navbar fixed to the top, add class .navbar-fixed-top to the .navbar class. Following example demonstrates this:
+
+To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the <body> tag or try your own values.-->
+
+<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div>
+   <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="appstore.html">APP STORE</a></li>
+      <li><a href="ourpeople.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="enquiry.html">ENQUIRY</a></li>
+   </ul>
+   </div>
+</nav>-->
+
+
+<!--Responsive navbar
+To add the responsive features to the navbar, the content that you want to be collapsed needs to be wrapped in a <div> with classes .collapse, .navbar-collapse. The collapsing nature is tripped by a button that has a the class of .navbar-toggle and then features two data- elements. The first, data-toggle, is used to tell the JavaScript what to do with the button, and the second, data-target, indicates which element to toggle. Three with a class of .icon-bar create what I like to call the hamburger button. This will toggle the elements that are in the .nav-collapse <div>. For this feature to work, you need to include the Bootstrap Collapse Plugin.
+
+Following example demonstrates this:-->
+
+<nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Wizcode Technologies Ltd</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="index.html">HOME</a></li>
+         <li class="active"><a href="appstore.html">APP STORE</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="#">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="#">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+
+
+
+
+<!--To get a jumbotron full width, and without rounded corners use the .jumbotron class outside all .container classes and instead add a .container within as shown in the following example:-->
+
+<div class="jumbotron">
+   <div class="container">
+      <h2 class="text-center">Apps</h2>
+      <p class="text-center">We&#8217;re happy to display some of our certified apps on the WindowsPhone Store here. Feel free to follow this link to the App store for download.</p>
+      <p class="text-center"><a class="btn btn-primary btn-lg" role="button">Make Enquiry</a>
+      </p>
+   </div>
+</div>
+
+<!--Bootstrap Media Object
+This chapter discusses about Media object. These are abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content. The goal of the media object is to make the code for developing these blocks of information drastically shorter.
+
+The goal of media objects (light markup, easy extendability) is achieved by applying classes to some simple markup. There are two forms to the media object:
+
+.media: This class allows to float a media object (images, video, audio) to the left or right of a content block.
+
+.media-list: If you are preparing a list where the items will be part of an unordered list, use class. Useful for comment threads or articles lists.
+
+Let us see an example below of default media object:-->
+
+
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1hBbX8x">
+      <img class="media-object" src="images/appstore/nigerian-constitution.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1hBbX8x"><h4 class="media-heading">Nigerian Constitution App</h4></a>
+      Nigerian Constitution is a collection of constitution of the Federal Republic of Nigeria, which commenced on 5th May 1999 according to Decree No. 24. This App is to help citizens of Nigeria learn more about the constitution. The App Contains all sections and parts (sub-sections) of the constitution.
+   </div>
+</div>
+
+<hr/>
+
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/QfY4m4">
+      <img class="media-object" src="images/appstore/ng-criminal-code.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/QfY4m4"><h4 class="media-heading">Nigerian Criminal Code Act</h4></a>
+      Nigerian Criminal Code Act is a collection of nigerian criminal offences and their respective laws to help citizens of Nigeria learn more about the Nigerian criminal law. The App Contains all Parts, Divisions and Chapters of the criminal code act.
+      </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1fwMoDQ">
+      <img class="media-object" src="images/appstore/inspireme.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1fwMoDQ"><h4 class="media-heading">InspireMe</h4></a>
+       This App inspires you to awaken and see the world differently, with new possibilities open to you. The App contains a comprehensive database of quality quotations from the likes of Albert Einstein, Oprah Winfrey, Martin Luther King, Peter Shepherd, Nelson Mandela, The peace pilgrim, Steve Jobs, Graham, Hellen Keller, Alan Cohen, Mark Twain, Alexander Pope, Buddha, Mother Teresa, Ghandi, Thoreau, Napoleon, Henry Ford, and many others such as presidents, great people. The InspireMe App is very useful and essential for personal growth and transformation of body, mind and spirit, as it contains several inspiring quotes.
+
+   </div>
+</div>
+
+<hr/>
+
+
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1irN7pJ">
+      <img class="media-object" src="images/appstore/jamb-cbt.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1irN7pJ"><h4 class="media-heading">Jamb CBT</h4></a>
+      Jamb CBT is a collection of thousands of Solved past questions on Jamb (Joint Admission and Matriculation Board) Examination to help Nigerian students in preparation for the Jamb Examination. This App presently contains Subjects such as English, Mathematics, Physics, Chemistry, Biology, Economics, Government, Literature, CRK and Geography. Download this app and start preparing for your Jamb Examination anywhere you go.
+      </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1sOyGoD">
+      <img class="media-object" src="images/appstore/islamobile.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1sOyGoD"><h4 class="media-heading">IslaMobile</h4></a>
+      IslaMobile is a collection of thousands of Islamic Questions & Answers, Islamic Quotes, Latest Islamic News from around the world to help us learn more about Islam. The App contains several hadiths quotes of the Prophet (pbuh) based on many topics from references like Bukhari, Muslim, Tirmidhi, Abu Dawood, Ibn Majah, Ibn Hibban, Al-Baihaqi, Al-Mu'jam al-Kabeer, an-Nasa'i al-Kubra, Musnad Ahmad and many other references. The App contains several functions and features, such as sharing News, sharing quotes with friends and families via SMS, Email and Facebook.
+   </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/LBbYNJ">
+      <img class="media-object" src="images/appstore/life-changing-quote.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/LBbYNJ"><h2 class="media-heading">Life Changing Quote</h2></a>
+      Get over thousands of life-changing christian quotes and bible verses using LifeChanging Quotes App for Windows Phone. This App helps you to aggressively pursue your purpose and also awaken your dream to see the world differently, with new possibilities open to you. The App contains a comprehensive database of quality inspirational life changing quotes and bible verses.
+
+   </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1dgZgcW">
+      <img class="media-object" src="images/appstore/hadith.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1dgZgcW"><h2 class="media-heading">Muslim Golden Hadith</h2></a>
+      Get up to 200 Golden Hadiths Quotes with MuslimsGoldenHadiths App for Windows Phone. Every Muslim is aware of the Prophet’s Hadiths. As we all know that Islam is based on two major sources: Qur’an and the Sunnah. This Sunnah is therefore available to we Muslims in form of Hadiths. 
+   </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1mtCSoh">
+      <img class="media-object" src="images/appstore/news-update.png" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1mtCSoh"><h2 class="media-heading">News Update 247</h2></a>
+      Get latest news update with the News Update App for Windows Phone. Top Stories, Business News, Sports News updates all in single window
+      </div>
+</div>
+
+
+
+
+<!--Fixed to bottom
+If you want the navbar fixed to the bottom of the page, add class .navbar-fixed-bottom to the .navbar class. Following example demonstrates this:-->
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="#">&copy; 2014 Wizcode Technologies</a>
+   </div>
+   <div class="navbar-right">
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="#">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="privacy.html">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+      
+
+
+
+</body>
+</html>

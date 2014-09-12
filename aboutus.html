@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wizcode Technologies Ltd</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="myboot/style.css">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+
+</head>
+
+
+<body>
+
+<!--Fixed to top
+The Bootstrap navbar can be dynamic in its positioning. By default, it is a block-level element that takes its positioning based on its placement in the HTML. With a few helper classes, you can place it either on the top or bottom of the page, or you can make it scroll statically with the page.
+
+If you want the navbar fixed to the top, add class .navbar-fixed-top to the .navbar class. Following example demonstrates this:
+
+To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the <body> tag or try your own values.-->
+
+<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div>
+   <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="appstore.html">APP STORE</a></li>
+      <li><a href="ourpeople.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="enquiry.html">ENQUIRY</a></li>
+   </ul>
+   </div>
+</nav>-->
+
+
+<!--Responsive navbar
+To add the responsive features to the navbar, the content that you want to be collapsed needs to be wrapped in a <div> with classes .collapse, .navbar-collapse. The collapsing nature is tripped by a button that has a the class of .navbar-toggle and then features two data- elements. The first, data-toggle, is used to tell the JavaScript what to do with the button, and the second, data-target, indicates which element to toggle. Three with a class of .icon-bar create what I like to call the hamburger button. This will toggle the elements that are in the .nav-collapse <div>. For this feature to work, you need to include the Bootstrap Collapse Plugin.
+
+Following example demonstrates this:-->
+
+<nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Wizcode Technologies Ltd</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li class="active"><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="privacy.html">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+
+
+
+
+<!--To get a jumbotron full width, and without rounded corners use the .jumbotron class outside all .container classes and instead add a .container within as shown in the following example:-->
+
+<div class="jumbotron">
+   <div class="container">
+      <h2 class="text-center">Our People</h2>
+      <p class="text-center">This is where you can go through the profile of each of the great people at this Company. Feel free to know who we are.</p>
+      <p class="text-center"><a class="btn btn-primary btn-lg" role="button">Make Enquiry</a>
+      </p>
+   </div>
+</div>
+
+<!--Bootstrap Media Object
+This chapter discusses about Media object. These are abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content. The goal of the media object is to make the code for developing these blocks of information drastically shorter.
+
+The goal of media objects (light markup, easy extendability) is achieved by applying classes to some simple markup. There are two forms to the media object:
+
+.media: This class allows to float a media object (images, video, audio) to the left or right of a content block.
+
+.media-list: If you are preparing a list where the items will be part of an unordered list, use class. Useful for comment threads or articles lists.
+
+Let us see an example below of default media object:-->
+
+
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1hBbX8x">
+      <img class="media-object" src="images/ourpeople/abideen1.JPG" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1hBbX8x"><h4 class="media-heading">Abideen Adelu (Founder)</h4></a>
+      
+		Abideen is a Mobile App Developer and also an Entrepreneur. He started as a Microcontroller programmer where he built countless numbers of hardware system which could be used for home automations, controls, security and others. He went further into software development and finally settled as an App Developer, Web Programmer and Backend Management with much interest in Database Modelling and designs.
+   </div>
+</div>
+
+<hr/>
+
+<div class="media">
+   <a class="pull-right" href="http://bit.ly/1hBbX8x">
+      <img class="media-object" src="images/ourpeople/Jum.jpg" 
+      alt="Media Object">
+   </a>
+   <div class="media-body">
+      <a href="http://bit.ly/1hBbX8x"><h4 class="media-heading">Jumoke Aremu (Legal Adviser)</h4></a>
+      
+		Jumoke is currently consulting as a business fellow at Lagos Business School. She graduated from the Faculty of Law, Obafemi Awolowo University, Nigeria as one of the best student in her class. She is now a Barrister after graduating from the Law School, Abuja, Nigeria. She is currently an Alumni and member of the Nigeria Bar Association. 
+   </div>
+</div>
+
+
+<!--Fixed to bottom
+If you want the navbar fixed to the bottom of the page, add class .navbar-fixed-bottom to the .navbar class. Following example demonstrates this:-->
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="#">&copy; 2014 Wizcode Technologies</a>
+   </div>
+   <div class="navbar-right">
+      <ul class="nav navbar-nav">
+         <li><a href="#">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li class="active"><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="privacy.html">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+
+
+      
+
+
+
+</body>
+</html>

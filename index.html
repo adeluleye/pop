@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Abideen Adelu</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <link href="myboot/carousel.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="myboot/style.css">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+   
+   
+
+
+   <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="myboot/style.css">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="myjs.js"></script>-->
+   
+
+</head>
+
+
+<body>
+
+<!--Fixed to top
+The Bootstrap navbar can be dynamic in its positioning. By default, it is a block-level element that takes its positioning based on its placement in the HTML. With a few helper classes, you can place it either on the top or bottom of the page, or you can make it scroll statically with the page.
+
+If you want the navbar fixed to the top, add class .navbar-fixed-top to the .navbar class. Following example demonstrates this:
+
+To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the <body> tag or try your own values.-->
+
+<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div>
+   <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="appstore.html">APP STORE</a></li>
+      <li><a href="ourpeople.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="enquiry.html">ENQUIRY</a></li>
+   </ul>
+   </div>
+</nav>-->
+
+
+<!--Responsive navbar
+To add the responsive features to the navbar, the content that you want to be collapsed needs to be wrapped in a <div> with classes .collapse, .navbar-collapse. The collapsing nature is tripped by a button that has a the class of .navbar-toggle and then features two data- elements. The first, data-toggle, is used to tell the JavaScript what to do with the button, and the second, data-target, indicates which element to toggle. Three with a class of .icon-bar create what I like to call the hamburger button. This will toggle the elements that are in the .nav-collapse <div>. For this feature to work, you need to include the Bootstrap Collapse Plugin.
+
+Following example demonstrates this:-->
+
+<nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Abideen Adelu</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="index.html">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="#">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+
+
+
+
+<!--To get a jumbotron full width, and without rounded corners use the .jumbotron class outside all .container classes and instead add a .container within as shown in the following example:-->
+
+<div class="jumbotron">
+   <div class="container">
+      <!--<h2 class="text-center">Dedicated to the Craft of Web Development & Mobile Apps in Africa</h2>-->
+      <!--<p class="text-center">We Design, Implement and Deploy. Do you have a Project to get done today and need some assistance? Don't hessitate to make an enquiry</p>-->
+      <h2 class="text-center">Welcome to my home</h2>
+      <p class="text-center">I am an easy going Entrepreneural, Software Developer currently undergoing Entrepreneural training at MEST, Accra, Ghana. I am Generous, Positive and also maintains Standards (GPS)</p>
+      <p class="text-center"><a href="enquiry.html" class="btn btn-primary btn-lg" role="button">FIND OUT MORE</a>
+      </p>
+   </div>
+</div>
+
+
+<!-- Carousel
+    ================================================== -->
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+      <!-- Indicators -->
+      <!--<ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Dream Big!!!</h1>
+              <p>This is where you can go through the profile of each of the great people at this Company. Feel free to know who we are.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Dream Big!!!</h1>
+              <p>This is where you can go through the profile of each of the great people at this Company. Feel free to know who we are.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Dream Big!!!</h1>
+              <p>This is where you can go through the profile of each of the great people at this Company. Feel free to know who we are.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>--><!-- /.carousel -->
+
+
+
+
+<!--Adding Custom Content
+Now that we have a basic thumbnail, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails. Follow the steps below:
+
+Change the <a> tag that has a class of .thumbnail to a <div>.
+
+Inside of that <div>, you can add anything you need. As this is a <div>, we can use the default span-based naming convention for sizing.
+
+If you want to group multiple images, place them in an unordered list, and each list item will be floated to the left.
+
+The following example demonstrates this:-->
+
+<div class="row">
+   <div class="col-sm-6 col-md-12">
+      
+      <div class="caption">
+         <h2 class="text-center">ABOUT ME</h2>
+         <!--<p>Some sample text. Some sample text.</p>-->
+      </div>
+      <div class="thumbnail">
+         <img src="images/ourpeople/Jum.jpg" class="img-responsive img-circle"
+         alt="Generic placeholder thumbnail">
+      </div>
+
+      <div class="caption">
+         <p class="text-center">
+            <a href="aboutus.html" class="btn btn-primary btn-lg" role="button">
+               VIEW PROFILE
+            </a> 
+         </p>
+      </div>
+   </div>
+   
+   
+   <!--<div class="col-sm-6 col-md-6">
+      
+      <div class="caption">
+         <h2 class="text-center">MOBILE APPS</h2>
+         
+      </div>
+      <div class="thumbnail">
+         
+         <img src="images/ourpeople/Jum.jpg" class="img-responsive img-circle"
+         alt="Generic placeholder thumbnail">
+      </div>
+
+      <div class="caption">
+         <p class="text-center">
+            <a href="appstore.html" class="btn btn-primary btn-lg" role="button">
+               OUR MOBILE APPS
+            </a> 
+         </p>
+      </div>
+   </div>-->
+
+
+   
+   <!--<div class="col-sm-6 col-md-3">
+      
+      <div class="caption">
+         <h2 class="text-center">HIRE US</h2>
+         
+      </div>
+      <div class="thumbnail">
+         <img src="images/appstore/islamobile.png" class="img-responsive img-circle"
+         alt="Generic placeholder thumbnail">
+      </div>
+
+      <div class="caption">
+         <p class="text-center">
+            <a href="faqs.html" class="btn btn-primary btn-lg" role="button">
+               FIND OUT HOW
+            </a> 
+         </p>
+      </div>
+   </div>
+
+
+   <div class="col-sm-6 col-md-3">
+      
+      <div class="caption">
+         <h2 class="text-center">NEED HELP?</h2>
+         
+      </div>
+      <div class="thumbnail">
+         <img src="images/appstore/islamobile.png" class="img-responsive img-circle"
+         alt="Generic placeholder thumbnail">
+      </div>
+
+      <div class="caption">
+         <p class="text-center">
+            <a href="enquiry.html" class="btn btn-primary btn-lg" role="button">
+               SUBMIT AN ENQUIRY
+            </a> 
+         </p>
+      </div>
+   </div>-->
+
+   
+   
+</div>
+
+
+<!--Footer-->
+
+<!-- FOOTER -->
+<!--<footer>
+   <div class="container">
+   <!--<p class="pull-right" style="font-size: 12px; font-weight: bold;">
+      &copy; 2014 Wizcode Technologies Ltd<br> 
+   </p>
+
+   
+   <p style="font-size: 12px; font-weight: bold;">
+   <button type="button" class="btn btn-default btn-sm">
+   <span class="glyphicon glyphicon-phone"></span>:&nbsp;&nbsp;+233 54 151 7994 <br> 
+   </button>
+
+   <button type="button" class="btn btn-default btn-sm">
+   <span class="glyphicon glyphicon-phone"></span>:&nbsp;&nbsp;+234 703 180 1546 <br> 
+   </button>
+
+                 
+   </p>
+   </div>
+</footer>-->
+
+
+<!--Fixed to bottom
+If you want the navbar fixed to the bottom of the page, add class .navbar-fixed-bottom to the .navbar class. Following example demonstrates this:-->
+
+<!--<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="#">&copy; 2014 Wizcode Technologies</a>
+   </div>
+   <div class="navbar-right">
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="#">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="#">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>-->
+
+<!--<div class="footer">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="mc_embed_signup">
+            <form action="http://meltwater.us2.list-manage.com/subscribe/post?u=4cc5f6e8773318248e5056eee&amp;id=23d1a6cfad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="mc-field-group form-group col-md-6 col-md-offset-2">
+                <input type="email" value="" placeholder="Your e-mail" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL" style="margin-top: 3px;">
+              </div>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-info col-md-2 btn-xs" style="font-size: 15px;padding: 16px;">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>  
+            </form>
+            </div>
+            
+          </div>
+        </div>
+        <div class="social-follow mtl">
+            <a href="https://www.facebook.com/abideen.adelu" target="_blank"></><span class="glyphicon-inbox"></span></a>
+            <a href="https://twitter.com/adeluleye" target="_blank"><span class="glyphicon-inbox"></span></a>
+            <a href="http://www.youtube.com/adeluleye" target="_blank"><span class="glyphicon-inbox"></span></a>
+            <a href="http://instagram.com/adeluleye" target="_blank"><span class="icon-instagram"></span></span></a>
+        </div>
+    </div>
+</div>-->
+
+
+
+
+
+
+
+
+</body>
+</html>

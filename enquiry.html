@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wizcode Technologies Ltd</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="myboot/style.css">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+
+</head>
+
+
+<body>
+
+<!--Fixed to top
+The Bootstrap navbar can be dynamic in its positioning. By default, it is a block-level element that takes its positioning based on its placement in the HTML. With a few helper classes, you can place it either on the top or bottom of the page, or you can make it scroll statically with the page.
+
+If you want the navbar fixed to the top, add class .navbar-fixed-top to the .navbar class. Following example demonstrates this:
+
+To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the <body> tag or try your own values.-->
+
+<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div>
+   <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="appstore.html">APP STORE</a></li>
+      <li><a href="ourpeople.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="enquiry.html">ENQUIRY</a></li>
+   </ul>
+   </div>
+</nav>-->
+
+
+<!--Responsive navbar
+To add the responsive features to the navbar, the content that you want to be collapsed needs to be wrapped in a <div> with classes .collapse, .navbar-collapse. The collapsing nature is tripped by a button that has a the class of .navbar-toggle and then features two data- elements. The first, data-toggle, is used to tell the JavaScript what to do with the button, and the second, data-target, indicates which element to toggle. Three with a class of .icon-bar create what I like to call the hamburger button. This will toggle the elements that are in the .nav-collapse <div>. For this feature to work, you need to include the Bootstrap Collapse Plugin.
+
+Following example demonstrates this:-->
+
+<nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Wizcode Technologies Ltd</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="appstore.html">APP STORE</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="privacy.html">PRIVACY POLICY</a></li>
+         <li><a href="faqs.html">FAQs</a></li>
+         <li class="active"><a href="enquiry.html">ENQUIRY</a></li>
+         
+      </ul>
+   </div>
+</nav>
+
+
+
+
+
+<!--To get a jumbotron full width, and without rounded corners use the .jumbotron class outside all .container classes and instead add a .container within as shown in the following example:-->
+
+<div class="jumbotron">
+   <div class="container">
+      <h2 class="text-center">Submit Enquiry</h2>
+      <p class="text-center">You can submit an enquiry form here and we will respond to you shortly.</p>
+      
+   </div>
+</div>
+
+
+
+
+<form class="form-horizontal" role="form">
+   <div class="form-group">
+      <label for="firstname" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+         <input type="text" class="form-control" id="firstname" 
+            placeholder="Enter Full Name">
+      </div>
+   </div>
+   <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+         <input type="text" class="form-control" id="email" 
+            placeholder="Email Address">
+      </div>
+   </div>
+
+   
+
+   <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Enquiry</label>
+    <div class="col-sm-10">
+    <textarea type="text" class="form-control" rows="3"></textarea>
+  </div>
+   
+   <!--<div class="form-group">
+      <label for="name">Gender</label>
+      <div class="col-sm-10">
+      <select class="form-control">
+         <option>M</option>
+         <option>F</option>
+      </select>
+      </div>
+   </div>-->
+
+   <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+         <button type="submit" class="btn btn-success">SUBMIT</button>
+      </div>
+      
+   </div>
+</form>
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+   
+   <div class="col-md-10 col-md-offset-1">
+   <h3>General Inquiries</h3>
+   <p class="none">wizcodetech@gmail.com<br class="none" />
+   +233-54-151-7994, +234-703-180-1546</p>
+
+</div>
+</nav>   
+                
+
+    
+
+</body>
+</html>
